@@ -43,20 +43,40 @@ main {
   width: 70%;
   padding: 20px;
 }
-input {
-  width: 100%;
-  padding: 10px;
-  background-color: #f1f1f1;
-  margin: 10px;
-  border: none;
-}
+
+input,
 .input2 {
   width: 100%;
   padding: 10px;
   background-color: #f1f1f1;
   margin: 10px;
-  border: none;
+  border: 1px solid;
+  border-radius: 5px;
 }
+#gender {
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 5px;
+}
+#color {
+  width: 50%;
+  margin-bottom: 25px;
+}
+.containers {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 200px;
+  padding-right: 25px;
+}
+/* .input2 {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: none;
+} */
 input:focus {
   background-color: #ddd;
 }
@@ -66,6 +86,7 @@ input:focus {
   margin: 10px;
   padding: 10px;
   /* border-radius: 51px; */
+  border: none;
   background-color: green;
   color: white;
 }
@@ -80,5 +101,17 @@ label {
   main {
     text-align: center;
     margin-top: 200px;
+  }
+  .containers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  #gender {
+    width: 200px;
+    margin-left: 0;
   }
 }
