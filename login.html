@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>form-page</title>
-</head>
-<style>
-    body{
-    background-image: url(./IMG_1873.jpeg);
+  </head>
+  <style>
+    body {
+      background-image: url(./IMG_1873.jpeg);
     }
-    .ptag{
-        margin: 5px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .ptag {
+      margin: 5px;
+      margin-bottom: 10px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
-    .login{
-        text-align: center; 
+    .login {
+      margin-top: 150px;
+      text-align: center;
     }
-</style>
-<body>
-    <form action="./success.html">
-                <h1 class="login">LOGIN PAGE</h1>
-                <p class="ptag">Please fill in the form to <strong>login</strong></p>
-                <hr>
-                <label for="email">Username   : </label>
-                <input class="input2" type="email" name="email" id="email" placeholder="your email address" required>
-                <br>
-                <label for="psw">Password :</label>
-                <input class="input2" type="password" name="psw" id="psw" placeholder="password" required>
-                <br>
-                <hr>
-                <br>
-                <p>By clicking on the button below, you agree to our <a href="#">terms & condition</a></p>
-                <button type="submit" class="button2">Login</button>    
-    </form>
-  
-</body>
+  </style>
+  <body>
+    <div class="containers">
+      <form action="./success.html">
+        <div class="container">
+          <h1 class="login">LOGIN PAGE</h1>
+          <p class="ptag">Please fill in the form to <strong>login</strong></p>
+          <hr />
+          <br />
+          <label for="email">Username : </label>
+          <input
+            class="input2"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email address"
+            required
+          />
+          <br />
+          <label for="psw">Password :</label>
+          <input
+            class="input2"
+            type="password"
+            name="psw"
+            id="psw"
+            placeholder="password"
+            required
+          />
+          <br />
+          <hr />
+          <br />
+          <p>
+            By clicking on the button below, you agree to our
+            <a href="#">terms & condition</a>
+          </p>
+          <button type="submit" class="button2">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
-
-
 
 <!-- <form action="./index.html">
     <div id="contain">
